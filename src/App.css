@@ -1,0 +1,58 @@
+/* removeing all default padding and margin property */
+* {
+  padding: 0;
+  margin: 0;
+}
+/* create page background */
+.mainDivSection {
+  background-color: rgba(195, 224, 92, 0.5);
+}
+/* Header css */
+
+/* header background color position and hight */
+.header {
+  text-align: center;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* h1 tag hover transition property */
+h1 {
+  font-size: 40px;
+  transition: 0.5s ease-in-out;
+}
+h1:hover {
+  color: #e028d1;
+}
+/* Pushing red line further down */
+.mainHeader {
+  padding-bottom: 20px;
+  color: #39358f;
+}
+/* controling red line below header text */
+.underline {
+  position: relative;
+}
+/* createing header red line */
+.underline::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-color: #a3313a;
+  height: 2px;
+  width: 500px;
+  transform: translate(-50%);
+  left: 50%;
+  bottom: 0%;
+}
+
+/* main section CSS */
+
+/* main section background and position */
+.main {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

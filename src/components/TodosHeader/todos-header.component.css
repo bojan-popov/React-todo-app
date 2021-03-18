@@ -1,0 +1,18 @@
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 25px;
+}
+.todoDivSection {
+  text-align: center;
+}
+.todoDivSection h3 {
+  font-size: 20px;
+  color: #39358f;
+  transition: 0.5s ease-in-out;
+}
+.todoDivSection h3:hover {
+  color: #e028d1;
+}
