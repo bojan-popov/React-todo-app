@@ -11,15 +11,7 @@ function nextTodoId(todos) {
 }
 const Todos = () => {
   const [val, setVal] = useState("");
-  const [todos, setTodos] = useState([
-    {
-      id: 1,
-      text: "Learn React",
-      completed: true,
-    },
-    { id: 2, text: "Learn JavaScript", completed: false },
-    { id: 3, text: "Learn CSS", completed: false },
-  ]);
+  const [todos, setTodos] = useState([]);
 
   const onChangeHandler = (e) => {
     setVal(e.target.value);

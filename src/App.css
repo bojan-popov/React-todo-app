@@ -3,10 +3,11 @@
   padding: 0;
   margin: 0;
 }
-/* create page background */
-.mainDivSection {
+/* page background */
+body {
   background-color: rgba(195, 224, 92, 0.5);
 }
+
 /* Header css */
 
 /* header background color position and hight */
@@ -25,12 +26,10 @@ h1 {
 h1:hover {
   color: #e028d1;
 }
-/* Pushing red line further down */
+
 .mainHeader {
-  padding-bottom: 20px;
   color: #39358f;
 }
-/* controling red line below header text */
 .underline {
   position: relative;
 }
@@ -41,7 +40,7 @@ h1:hover {
   position: absolute;
   background-color: #a3313a;
   height: 2px;
-  width: 500px;
+  min-width: 100%;
   transform: translate(-50%);
   left: 50%;
   bottom: 0%;
@@ -51,8 +50,55 @@ h1:hover {
 
 /* main section background and position */
 .main {
-  padding: 100px;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+/* button css , position and style */
+.button {
+  padding: 25px;
+  margin: 10px;
+  color: #39358f;
+  border-color: rgba(195, 224, 92, 0.8);
+  background-color: rgba(195, 224, 92);
+  box-shadow: none;
+  transition: 0.2s ease-in-out;
+}
+.button:hover {
+  border-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(195, 224, 92, 0.5);
+}
+.divButtons {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+/* list elements position and style */
+.ulListToDoes {
+  list-style: none;
+}
+.ulListToDoes li {
+  display: flex;
+}
+.todoText {
+  text-align: center;
+  font-size: 30px;
+  width: 300px;
+  color: #39358f;
+  transition: 0.5s ease-in-out;
+}
+.todoText:hover {
+  color: #e028d1;
+}
+.liInputSection {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.liLists {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

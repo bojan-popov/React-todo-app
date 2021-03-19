@@ -1,9 +1,11 @@
-input {
+.inputSection {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
   font-size: 25px;
+  color: #39358f;
+  background-color: rgba(195, 224, 92);
 }
 .todoDivSection {
   text-align: center;

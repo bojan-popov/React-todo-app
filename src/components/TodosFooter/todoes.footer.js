@@ -1,10 +1,16 @@
 const TodosFooter = (props) => {
   return (
-    <div>
-      <button onClick={() => props.onSelectAll(props.todo)}>
+    <div className="divButtons">
+      <button
+        className="btnSelectAll button"
+        onClick={() => props.onSelectAll(props.todo)}
+      >
         Mark all completed
       </button>
-      <button onClick={() => props.onDeleteAllCompleted(props.todo)}>
+      <button
+        className="btnDeleteAll button"
+        onClick={() => props.onDeleteAllCompleted(props.todo)}
+      >
         Clear all completed
       </button>
     </div>
